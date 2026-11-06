@@ -15,8 +15,11 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" />
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="8">
+        <TextBox Text="{Binding Greeting}" />
+        <Button Content="Click me" Click="Button_Click" />
+    </StackPanel>
 
 </Window>
