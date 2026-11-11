@@ -9,6 +9,8 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
+    <None Remove="Models\AppleScripts\**\._*" />
+    <None Update="Models\AppleScripts\**\*" CopyToOutputDirectory="PreserveNewest" />
     <AvaloniaXaml Remove="**/._*" />
     <AvaloniaResource Remove="**/._*" />
     <Compile Remove="**/._*" />
@@ -24,5 +26,6 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="SharpHook" Version="8.0.1" />
   </ItemGroup>
 </Project>
